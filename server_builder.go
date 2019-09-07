@@ -10,7 +10,7 @@ type serverBuilder struct {
 	streamInts []grpc.StreamServerInterceptor
 }
 
-func NewServerBuilder(opts ...grpc.ServerOption) *serverBuilder {
+func NewServerBuilder() *serverBuilder {
 	return &serverBuilder{
 		options:    make([]grpc.ServerOption, 0),
 		unaryInts:  make([]grpc.UnaryServerInterceptor, 0),
