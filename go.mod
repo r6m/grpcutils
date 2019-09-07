@@ -1,4 +1,4 @@
-module grpcutils
+module github.com/rezam90/grpcutils
 
 go 1.12
 
